@@ -9,17 +9,11 @@
 // @grant        GM.xmlHttpRequest
 // ==/UserScript==
 
-function init() {
-
 var accountid = document.getElementById("account-id").value;
 var theDiv = document.getElementById("qs-users");
 
-var iamroles = document.createElement("a");
+var iamroles = document.createElement("iamroles");
 iamroles.className = "infolink";
 iamroles.text = "iam-roles";
 iamroles.href = "https://iam-tools.amazon.com/accounts/show/"+accountid;
 theDiv.appendChild(iamroles);
-
-}
-
-window.onload = init;
